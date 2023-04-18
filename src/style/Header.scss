@@ -1,22 +1,27 @@
 .Header {
-  background: #663399;
+  background: black;
   color: white;
-  border-bottom: 3px solid white;
-  box-shadow: 0 16px 0 black;
-  transform: rotateZ(8deg) skew(-2deg, -10deg) translateY(-10%);
-  margin: 50px;
+  // border-bottom: 3px solid white;
+  // box-shadow: 0 16px 0 black;
+  // transform: rotateZ(8deg) skew(-2deg, -10deg) translateY(-10%);
+  margin-bottom: 1%;
 }
 
 .Header__body {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .Header__title {
-  flex: 1;
+   flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
   padding: 20px 0;
   font-family: "times new roman", times, serif;
   font-style: italic;
+  font-size: 3em;
 
   a {
     font-size: 6em;
@@ -56,7 +61,7 @@
 
 .Header__summary {
   text-decoration: none;
-  color: white;
+  color: rgb(225, 236, 230);
   text-align: center;
   cursor: pointer;
 
@@ -66,7 +71,7 @@
 }
 
 .Header__summary__line {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 @keyframes noise-anim {

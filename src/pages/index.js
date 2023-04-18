@@ -51,17 +51,26 @@ const Home = () => (
                 data-item-name={product.name}
                 data-item-url={`/`}
               >
+               <div className='card'>
+                <section className='game_image'>
                 <div className="Product__image">
                   <Img sizes={product.image.sizes} />
                 </div>{' '}
+                </section>
+
+               <section className='content'>
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
                     <div className="Product__price">{product.price}€</div>
                   </div>
-                  <span className="Product__buy">Buy now</span>
+                  <div className="Product__buy">Buy now</div>
                 </div>
+                </section>
+               </div>
+
               </div>
+
             </div>
           ))}
         </div>

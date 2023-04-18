@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+// import Link from 'gatsby-link';
 import '../style/index.scss';
 import { HelmetDatoCms } from 'gatsby-source-datocms';
 
@@ -13,9 +13,10 @@ const Layout = ({ children, site, seo }) => {
           <div className="Wrap">
             <div className="Header__body">
               <h1 className="Header__title">
-                <Link data-text={site.globalSeo.siteName} to="/">
+                  My Game Store
+                {/* <Link data-text={site.globalSeo.siteName} to="/">
                   {site.globalSeo.siteName}
-                </Link>
+                </Link> */}
               </h1>
               <div className="Header__summary snipcart-summary snipcart-checkout">
                 <div className="Header__summary__title">🛍 MY CART 🛍</div>
